@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcolor" >
+
+    <TextView
+        android:text="® All rights reserved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:textColor="#fff"
+        android:textSize="10dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:src="@drawable/scrumlogo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.13" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Scrum_in"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:id="@+id/textView"
+            android:layout_alignLeft="@+id/Progress"
+            android:layout_alignStart="@+id/Progress"
+            android:layout_weight="0.26" />
+
+        <ProgressBar
+            android:id="@+id/Progress"
+
+
+            android:progressTint="#fff"
+            android:progressBackgroundTint="#fff"
+
+            android:layout_marginTop="39dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
