@@ -29,7 +29,7 @@ public class Splash extends AppCompatActivity {
     private void doWork() {
         for (int progress=0; progress<100; progress+=10) {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
                mProgress.setProgress(progress);
             } catch (Exception e) {
                 e.printStackTrace();
